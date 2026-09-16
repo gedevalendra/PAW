@@ -21,10 +21,10 @@ Selama proses pengerjaan, terdapat beberapa kendala teknis yang dihadapi beserta
 Berdasarkan hasil pengujian menggunakan W3C Validator, kedua file HTML (`index.html` dan `berita.html`) telah sepenuhnya memenuhi standar validasi web tanpa adanya *error* (setelah perbaikan pada atribut gambar dan penyesuaian tag usang diselesaikan).
 
 - **Screenshot Validasi `index.html`:**
-  <img src="images/validasiIndex.png">
-- **Screenshot Validasi `berita.html`:**
-  <img src="images/validasiBerita.png">
+  ![Validasi Index](images/validasiIndex.png)
 
+- **Screenshot Validasi `berita.html`:**
+  ![Validasi Berita](images/validasiBerita.png)
 
 ## 4. Link GitHub Pages
 *   **URL:** [https://gedevalendra.github.io/pemweb/tugas2](https://gedevalendra.github.io/pemweb/tugas2)
