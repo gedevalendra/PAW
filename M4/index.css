@@ -1,0 +1,388 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* =============== INDEX SECTION =============== */
+
+hr {
+    border: none;
+    height: 0.4px;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.FormSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.FormSection .FormContainer {
+    width: 100%;
+    height: 100%;
+    max-width: 100vh;
+    max-height: 60vh;
+    background-color: #ffffff;
+    display: flex;  
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgb(169, 169, 169);
+}
+
+.FormSection .FormContainer .FormLeft {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    padding: 5%;
+}
+
+.FormSection .FormContainer .FormLeft .MainBubble {
+    position:absolute;
+    top: -30%;
+    left: -40%;
+    width: 70vh;
+    height: 70vh;
+    background: linear-gradient(0deg, rgb(55, 85, 255), rgb(30, 50, 158));
+    border-radius: 100%;
+}
+
+.FormSection .FormContainer .FormLeft .MainBubble .MbTwo{
+    position:absolute;
+    bottom: -30%;
+    right: 40%;
+    width: 30vh;
+    height: 30vh;
+    background: linear-gradient(0deg, rgb(55, 85, 255), rgb(30, 50, 158));
+    border-radius: 100%;
+}
+
+.FormSection .FormContainer .FormLeft h1 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.FormSection .FormContainer .FormRight {
+    position: relative;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FormSection .FormContainer .FormRight .FrHeading {
+    position: relative;
+    width: 100%;
+    justify-content: left;
+    align-items: start;
+}
+
+.FormSection .FormContainer .FormRight .FrFooter {
+    font-size: 12px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.FormSection .FormContainer .FormRight .FrHeading h1{
+    color: black;
+}
+
+.FormSection .FormContainer .FormRight .FrHeading span{
+    color: black;
+    font-size: 12px;
+
+}
+
+.FormSection .FormContainer .FormRight form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.FormSection .FormContainer .FormRight form .FormLabel input {
+    z-index: 2;
+    position: relative;
+    background-color: transparent;
+    padding: 12px;
+    padding-left: 30px;
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    outline: 1px solid rgb(55, 85, 255);
+    width: 100%;
+}
+
+.FormSection .FormContainer .FormRight form label {
+    position: absolute;
+    z-index: 1;
+}
+
+.FormSection .FormContainer .FormRight form button {
+    background-color:rgb(55, 85, 255);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 1;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.FormSection .FormContainer .FormRight form .FormCheckbox {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.FormSection .FormContainer .FormRight form button:hover {
+    transform: scale(0.97);
+    opacity: 0.9;
+}
+
+.FormSection .FormContainer .FormRight form .FormLabel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FormSection .FormContainer .FormRight form .FormLabel label {
+    left: 30px;
+    top: 10px;
+    transition: all 0.2s ease-in-out;
+    font-size: 14px;
+    background-color: transparent;
+    padding: 0px 2px;
+    opacity: 0.3;
+}
+
+.FormSection .FormContainer .FormRight form .FormLabel input:focus ~ label {
+    top: -10px;
+    z-index: 3;
+    font-size: 12px;
+    background-color: #ffffff;
+    opacity: 1;
+    font-weight: 600;
+
+}
+
+.FormSection .FormContainer .FormRight form .FormLabel input:valid ~ label {
+    top: -10px;
+    z-index: 3;
+    font-size: 12px;
+    background-color: #ffffff;
+    opacity: 1;
+    font-weight: 600;
+}
+
+
+.FormSection .FormContainer .FormRight form .FormLabel .InputIcon {
+    position: absolute;
+    left: 10px;
+    z-index: 4;
+}
+
+.FormSection .FormContainer .FormRight form .FormLabel #ShowPassword {
+    z-index: 4;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* =============== DETAIL SECTION =============== */
+
+.DetailSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.DetailSection .DetailContainer {
+    width: 100%;
+    height: 100%;
+    max-width: 100vh;
+    max-height: 60vh;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px rgb(169, 169, 169);
+}
+
+.DetailSection .DetailContainer .MainLeft {
+    Background-color: white;
+    width: 20%;
+    height: 100%;
+}
+
+.DetailSection .DetailContainer .MainLeft .Left {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(55, 85, 255);
+    border-top-right-radius: 60px;
+}
+
+.DetailSection .DetailContainer .MainRight{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(55, 85, 255);
+    overflow: hidden;
+}
+
+.DetailSection .DetailContainer .MainRight .Right {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-bottom-left-radius: 60px;
+
+}
+
+.DetailSection .DetailContainer .MainRight .Right .DetailContent h1 {
+    font-size: 24px;
+    color: rgb(93, 93, 93);
+}
+
+.DetailSection .DetailContainer .MainRight .Right .DetailContent {
+    font-size: 20px;
+    padding: 5%;
+}
+
+.RegistrationTable {
+    width: 100%;
+    border: 1px solid #e1e5ee;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #3f4652;
+    font-size: 14px;
+    text-align: left;
+}
+
+.RegistrationTable th,
+.RegistrationTable td {
+    padding: 13px 16px;
+    border-bottom: 1px solid #e8ebf2;
+}
+
+.RegistrationTable th {
+    background-color: #f3f5fa;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+.RegistrationTable tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.RegistrationTable tbody tr:hover {
+    background-color: #f8f9fc;
+}
+
+.EditButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(55, 85, 255);
+    color: #ffffff;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.EditButton i {
+    font-size: 16px;
+}
+
+.EditButton:hover {
+    background-color: rgb(38, 65, 220);
+}
+
+.EditButton:focus-visible {
+    outline: 3px solid rgba(55, 85, 255, 0.3);
+    outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+    .RegistrationTable,
+    .RegistrationTable tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .RegistrationTable thead {
+        display: none;
+    }
+
+    .RegistrationTable tbody tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px solid #e1e5ee;
+    }
+
+    .RegistrationTable tbody tr:last-child {
+        border-bottom: none;
+    }
+
+    .RegistrationTable tbody td {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        min-width: 0;
+        padding: 12px;
+        overflow-wrap: anywhere;
+        border-bottom: none;
+    }
+
+    .RegistrationTable tbody td::before {
+        color: #737b89;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .RegistrationTable tbody td:nth-child(1)::before {
+        content: "No.";
+    }
+
+    .RegistrationTable tbody td:nth-child(2)::before {
+        content: "Nama Lengkap";
+    }
+
+    .RegistrationTable tbody td:nth-child(3)::before {
+        content: "Kata Sandi";
+    }
+
+    .RegistrationTable tbody td:nth-child(4)::before {
+        content: "NIM";
+    }
+
+    .RegistrationTable tbody td:nth-child(5)::before {
+        content: "Aksi";
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+</head>
+<style>
+    
+</style>
+<body>
+    <section class="FormSection">
+        <div class="FormContainer">
+            <div class="FormLeft">
+                <div class="MainBubble">
+                    <div class="MbTwo"></div>
+                </div>
+            </div>
+            <div class="FormRight">
+                <div class="FrHeading">
+                    <h1>Registrasi</h1>
+                    <span>Silakan isi formulir di bawah ini untuk mendaftar.</span>
+                </div>
+                <form method="GET" action="detail.html">
+                    <div class="FormLabel FormNama">
+                        <input class="InputName" type="name" name="name" required>
+                        <label for="name">Nama Lengkap</label>
+                        <i class="InputIcon bx bx-user"></i>
+                    </div>
+                    <div class="FormLabel FormPassword">
+                        <input id="InputPassword" class="InputPassword" type="password" name="password" required>
+                        <label for="password">Kata Sandi</label>
+                        <i class="InputIcon bx bx-lock"></i>
+                        <i id="ShowPassword" class="bx bx-show"></i>
+                    </div>
+                    <hr>
+                    <div class="FormLabel FormNIM">
+                        <input id="InputNIM" class="InputNIM" type="text" name="nim" required>
+                        <label for="nim">NIM</label>
+                        <i class="InputIcon bx bxs-id-card"></i>
+                    </div>
+                    <div class="FormCheckbox">
+                        <input type="checkbox" name="accept" required>
+                        <span>Saya telah menyetujui <a href="#" style="text-decoration: underline; color:black;">syarat dan ketentuan</a></span>
+                    </div>
+                    <button type="submit">Daftar</button>
+                </form>
+                <div class="FrFooter">
+                    <span>Copyright by <a href="https://www.funikin.com" target="_blank" style="text-decoration: underline; color:black;">FunikIn</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    const InputPassword = document.getElementById("InputPassword");
+    const ShowPassword = document.getElementById("ShowPassword");
+    const ShowPasswordIcon = document.getElementById("ShowPassword");
+
+    ShowPassword.addEventListener("click", ()=> {
+        if(InputPassword.type === "password") {
+            InputPassword.type = "text";
+            ShowPasswordIcon.classList = "bx bx-hide";
+        } else {
+            InputPassword.type = "password";
+            ShowPasswordIcon.classList = "bx bx-show";
+        }
+    })
+</script>
+
+</html>
