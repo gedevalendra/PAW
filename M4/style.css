@@ -8,6 +8,7 @@
 }
 
 body {
+    position: relative;
     background-color: #ffffff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -22,6 +23,7 @@ hr {
 }
 
 .FormSection {
+    position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -242,6 +244,16 @@ hr {
     height: 100%;
     background-color: rgb(55, 85, 255);
     border-top-right-radius: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+.DetailSection .DetailContainer .MainLeft .Left .bx {
+    position: absolute;
+    font-size: 60px;
+    color: white;
+    opacity: 0.5;
 }
 
 .DetailSection .DetailContainer .MainRight{
@@ -259,15 +271,19 @@ hr {
 
 }
 
+.DetailSection .DetailContainer .MainRight .Right .DetailContent {
+    font-size: 20px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .DetailSection .DetailContainer .MainRight .Right .DetailContent h1 {
     font-size: 24px;
     color: rgb(93, 93, 93);
 }
 
-.DetailSection .DetailContainer .MainRight .Right .DetailContent {
-    font-size: 20px;
-    padding: 5%;
-}
 
 .RegistrationTable {
     width: 100%;
@@ -281,8 +297,7 @@ hr {
     text-align: left;
 }
 
-.RegistrationTable th,
-.RegistrationTable td {
+.RegistrationTable th, .RegistrationTable td {
     padding: 13px 16px;
     border-bottom: 1px solid #e8ebf2;
 }
@@ -327,62 +342,4 @@ hr {
 .EditButton:focus-visible {
     outline: 3px solid rgba(55, 85, 255, 0.3);
     outline-offset: 2px;
-}
-
-@media (max-width: 600px) {
-    .RegistrationTable,
-    .RegistrationTable tbody {
-        display: block;
-        width: 100%;
-    }
-
-    .RegistrationTable thead {
-        display: none;
-    }
-
-    .RegistrationTable tbody tr {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        border-bottom: 1px solid #e1e5ee;
-    }
-
-    .RegistrationTable tbody tr:last-child {
-        border-bottom: none;
-    }
-
-    .RegistrationTable tbody td {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        min-width: 0;
-        padding: 12px;
-        overflow-wrap: anywhere;
-        border-bottom: none;
-    }
-
-    .RegistrationTable tbody td::before {
-        color: #737b89;
-        font-size: 11px;
-        font-weight: 600;
-    }
-
-    .RegistrationTable tbody td:nth-child(1)::before {
-        content: "No.";
-    }
-
-    .RegistrationTable tbody td:nth-child(2)::before {
-        content: "Nama Lengkap";
-    }
-
-    .RegistrationTable tbody td:nth-child(3)::before {
-        content: "Kata Sandi";
-    }
-
-    .RegistrationTable tbody td:nth-child(4)::before {
-        content: "NIM";
-    }
-
-    .RegistrationTable tbody td:nth-child(5)::before {
-        content: "Aksi";
-    }
 }
