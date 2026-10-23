@@ -5,6 +5,14 @@
 
 Proyek ini merupakan pembuatan halaman web sederhana menggunakan HTML dan CSS yang terdiri dari halaman registrasi dan halaman detail informasi pendaftar.
 
+## Tampilan Halaman
+
+### Halaman Registrasi
+![Halaman Registrasi](img/registrasi.png)
+
+### Halaman Detail Pendaftaran
+![Halaman Detail](img/detail.png)
+
 ## Struktur Halaman
 
 Proyek memiliki dua halaman utama:
